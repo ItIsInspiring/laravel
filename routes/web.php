@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('{pgTitle}', function ($pgTitle) {
+    return view('montest', array('pgTitle' => $pgTitle, 'contenu1'=>'Voici le contenu 1', 'contenu2'=>'Voici encore le contenu 2' ));
+});
