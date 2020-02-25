@@ -12,9 +12,30 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('{pgTitle}', function ($pgTitle) {
-    return view('montest', array('pgTitle' => $pgTitle, 'contenu1'=>'Voici le contenu 1', 'contenu2'=>'Voici encore le contenu 2' ));
+Route::get('map', function () {
+    return view('map');
 });
+
+Route::get('events', function () {
+    return view('events');
+});
+
+Route::get('links', function () {
+    return view('links');
+});
+
+Route::get('forum', function () {
+    return view('forum');
+});
+
+Route::get('subscribe', function () {
+    return view('subscribe');
+});
+
+Route::get('signin', function () {
+    return view('signin');
+});
+

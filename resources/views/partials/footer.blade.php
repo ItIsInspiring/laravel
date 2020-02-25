@@ -1,7 +1,11 @@
     
-    <footer>
+        <footer>
+            
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ mix('js/app.js') }}"></script>
         
-    </footer>
-</body>
+    </body>
 </html>
     
